@@ -1,0 +1,129 @@
+###
+GET http://localhost:5000/user/getusers
+
+###
+POST http://localhost:5000/user/createuser
+Content-Type: application/json
+
+{
+     "firstName":"Khairun",
+         "lastName":"Pinjari",
+         "gender":"female",
+         "dateOfBirth":"1-1-1",
+         "email":"pkhairunn@gmail.com",
+         "password":"khairun"
+}
+
+
+###
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+     "email":"pkhairunn@gmail.com",
+         "password":"khairun"
+}
+###
+POST http://localhost:5000/notes/createnotes
+Content-Type: application/json
+
+{     "email":"swathi@gmail.com",
+     "title":"i",
+         "description":"abc"
+}
+
+###
+GET http://localhost:5000/notes/getnotes/swathi@gmail.com
+
+###
+POST http://localhost:5000/notes/movetotrash
+Content-Type: application/json
+
+{
+     "title":"b",
+     "email":"khairun@gmail.com"
+}
+
+###
+GET http://localhost:5000/notes/gettrashnotes/khairun@gmail.com
+
+###
+POST http://localhost:5000/notes/restorenote
+Content-Type: application/json
+
+{
+    "title":"a",
+    "email":"khairun@gmail.com"
+}
+###
+POST http://localhost:5000/notes/archivenote
+Content-Type: application/json
+
+{
+    "title":"c",
+    "email":"khairun@gmail.com"
+}
+
+###
+GET http://localhost:5000/notes/getarchivednotes/khairun@gmail.com
+
+###
+POST http://localhost:5000/notes/unarchive
+Content-Type: application/json
+
+{
+     "title":"c",
+    "email":"khairun@gmail.com"
+}
+
+###
+DELETE http://localhost:5000/notes/permanentdelete/swathi@gmail.com/i
+
+
+###
+POST http://localhost:5000/favourite/createfavourite
+Content-Type: application/json
+
+{    
+    "email":"swathi@gmail.com",
+     "title":"bb",
+         "description":"aaa",
+         "checkList":["a","b"]
+}
+
+###
+GET http://localhost:5000/favourite/getfavourites/khairun@gmail.com
+
+###
+DELETE http://localhost:5000/favourite/removefavourite/khairun@gmail.com/bb
+Content-Type: application/json
+
+{
+   "title":"bb",
+         "description":"aaa"
+}
+
+###
+GET http://localhost:5000/reminder/getreminders/swathi@gmail.com
+
+###
+POST http://localhost:5000/reminder/createreminder
+Content-Type: application/json
+
+{
+    "email":"swathi@gmail.com",
+     "title":"bb",
+         "description":"aaa"
+}
+
+###
+DELETE http://localhost:5000/reminder/deletereminder/khairun@gmail.com/bb
+
+
+###
+POST  http://localhost:5000/notes/updatenote
+
+{
+     "title":"a",
+         "description":"aaaff"
+}

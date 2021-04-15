@@ -1,0 +1,42 @@
+
+.containerNav{
+        position:sticky;
+        width:100%;
+      height:80px;
+    }
+    
+/*styles for note creating area input*/
+    .noteinput {
+        border: 0;
+        outline: none;
+        box-shadow: none; 
+        height: 30px;
+        line-height: 10px;
+        padding: 15px 15px;
+        border-bottom: 1px solid rgb(15, 13, 13);
+        width: 100%;
+        background-color: #b6ccfffb;
+    }
+    .listinput {
+        border: 0;
+        outline: none;
+        box-shadow: none; 
+        height: 30px;
+        line-height: 10px;
+        padding: 15px 15px;
+        border-bottom: 1px solid rgb(15, 13, 13);
+        width: 100%;
+        background-color: rgb(213, 242, 243);
+    }
+
+    /* stles for add note and add checklist buttons */
+.btn{
+    border-radius: 34px;
+    background-image: linear-gradient(to right,#6c6adf,#21d1c8);
+    color:ivory
+}
+
+.btn:hover{
+    transform:scale(1.3)
+}
+ 
